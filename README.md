@@ -19,12 +19,3 @@ To start the electron app you can simply run the following commands:
 npm install
 npm run start
 ```
-
-## Build
-
-It is also possible to build a self executable app. Where `platform` must 
-be one of `darwin`, `linux`, `mas` or `win32`.
-
-```
-npm run build [platform]
-```
