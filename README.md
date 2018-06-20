@@ -6,10 +6,10 @@ backend app on a server.
 
 ## Configuration
 
-Before you start the app you have to set the correct Fusio endpoint url. 
-The app connects then to this Fusio instance. Therefor open the file 
-`index.html` and change the `var url` to the absolute url of your Fusio 
-installation. By default we connect to the Fusio demo API.
+Before you start the app you have to set the correct Fusio endpoint url. Open
+the file `config.json` and adjust the key url to point to your Fusio url.
+The app connects then to this Fusio instance. By default we connect to the Fusio
+demo API.
 
 ## Installation
 
