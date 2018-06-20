@@ -1,6 +1,7 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
+const fs = require('fs');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -11,10 +12,14 @@ function createWindow () {
   win = new BrowserWindow({width: 1024, height: 768})
   win.maximize();
   
+  // get config
+  var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+
   // and load the index.html of the app.
   win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, 'index.htm'),
     protocol: 'file:',
+    query: config,
     slashes: true
   }))
 

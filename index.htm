@@ -15,7 +15,7 @@
     <script src="dist/fusio.min.js"></script>
     <script type="text/javascript">
     fusioApp.config(['fusioProvider', function(fusioProvider) {
-        var url = 'http://demo.fusio-project.org/';
+        var url = new URLSearchParams(document.location.search).get("url");
         fusioProvider.setBaseUrl(url);
     }]);
     </script>
@@ -46,6 +46,7 @@
                     <li><a ng-href="#!/scope"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Scope</a></li>
                     <li><a ng-href="#!/user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User</a></li>
                     <li><a ng-href="#!/rate"><span class="glyphicon glyphicon-filter" aria-hidden="true"></span> Rate</a></li>
+                    <li><a ng-href="#!/event"><span class="glyphicon glyphicon-retweet" aria-hidden="true"></span> Event</a></li>
                 </ul>
             </div>
             <div uib-accordion-group heading="Analytics" is-open="true" template-url="app/nav-template.html">
@@ -56,7 +57,7 @@
                     <li><a ng-href="#!/token"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Token</a></li>
                 </ul>
             </div>
-            <div uib-accordion-group heading="System" is-open="true" template-url="app/nav-template.html">
+            <div uib-accordion-group heading="System" is-open="false" template-url="app/nav-template.html">
                 <ul class="nav nav-pills nav-stacked">
                     <li><a ng-href="#!/cronjob"><span class="glyphicon glyphicon-time" aria-hidden="true"></span> Cronjob</a></li>
                     <li><a ng-href="#!/import"><span class="glyphicon glyphicon-import" aria-hidden="true"></span> Import</a></li>
