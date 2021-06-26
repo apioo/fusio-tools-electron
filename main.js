@@ -20,7 +20,7 @@ function createWindow() {
         prompt({
             title: 'Fusio endpoint',
             label: 'Url:',
-            value: 'http://demo.fusio-project.org/',
+            value: 'https://demo.fusio-project.org/',
             inputAttrs: {
                 type: 'url'
             }
