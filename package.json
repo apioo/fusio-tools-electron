@@ -12,8 +12,8 @@
     "electron-prompt": "^1.7"
   },
   "devDependencies": {
-    "electron": "^20.0",
-    "electron-builder": "^23.3"
+    "electron": "^30.0",
+    "electron-builder": "^24.0"
   },
   "build": {
     "appId": "org.fusio-project.backend",

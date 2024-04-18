@@ -13,6 +13,10 @@ npm install
 npm run start
 ```
 
+## Configuration
+
+At the `./preload.js` script you need to configure your Fusio url.
+
 ## Build
 
 You can also create an executable at the `target/` folder with:
