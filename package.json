@@ -1,27 +1,35 @@
 {
   "name": "fusio",
+  "productName": "fusio",
   "version": "1.0.0",
-  "description": "1.0.0",
-  "main": "main.js",
+  "description": "Fusio backend app",
+  "main": "src/index.js",
   "scripts": {
-    "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
   "devDependencies": {
-    "electron": "^33.0",
-    "electron-builder": "^25.0"
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-deb": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "@electron-forge/plugin-fuses": "^7.6.0",
+    "@electron-forge/publisher-github": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "electron": "33.2.1"
   },
-  "build": {
-    "appId": "org.fusio-project.backend",
-    "mac": {
-      "category": "public.app-category.developer-tools"
-    },
-    "win": {
-      "target": "portable"
-    },
-    "directories": {
-      "output": "target"
-    }
+  "keywords": [],
+  "author": {
+    "name": "Christoph Kappestein",
+    "email": "christoph.kappestein@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
   }
 }
