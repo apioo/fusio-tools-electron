@@ -49,7 +49,8 @@ module.exports = {
                 repository: {
                     owner: 'apioo',
                     name: 'fusio-tools-electron'
-                }
+                },
+                prerelease: true
             }
         }
     ]
