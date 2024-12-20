@@ -1,7 +1,7 @@
 {
   "name": "fusio",
   "productName": "fusio",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Fusio backend app",
   "main": "src/index.js",
   "scripts": {
