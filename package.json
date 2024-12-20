@@ -1,30 +1,27 @@
 {
   "name": "fusio",
   "version": "1.0.0",
+  "description": "1.0.0",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "dependencies": {
-    "electron-json-config": "^2.0",
-    "electron-prompt": "^1.7"
-  },
   "devDependencies": {
-    "electron": "^30.0",
-    "electron-builder": "^24.0"
+    "electron": "^33.0",
+    "electron-builder": "^25.0"
   },
   "build": {
     "appId": "org.fusio-project.backend",
     "mac": {
       "category": "public.app-category.developer-tools"
     },
+    "win": {
+      "target": "portable"
+    },
     "directories": {
       "output": "target"
     }
-  },
-  "win": {
-    "target": "portable"
   }
 }

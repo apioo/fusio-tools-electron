@@ -1,20 +1,14 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, View, WebContentsView} = require('electron')
 const path = require('path')
-
-// Keep a global reference of the window object, if you don't, the window will
-// be closed automatically when the JavaScript object is garbage collected.
-let win
 
 function createWindow() {
     const win = new BrowserWindow({
         width: 1024,
-        height: 768,
-        webPreferences: {
-            preload: path.join(__dirname, 'preload.js')
-        }
+        height: 768
     })
 
-    win.loadFile('dist/index.html');
+    win.loadFile('./index.html');
+    win.webContents.on('did-fail-load', () => win.loadFile('./index.html'));
 }
 
 app.whenReady().then(() => {
