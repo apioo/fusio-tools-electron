@@ -4,6 +4,12 @@
   "version": "3.0.0",
   "description": "Fusio backend app",
   "repository": "github:apioo/fusio-tools-electron",
+  "license": "MIT",
+  "author": {
+    "name": "Christoph Kappestein",
+    "email": "christoph.kappestein@gmail.com",
+    "url": "https://chrisk.app/"
+  },
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -24,12 +30,6 @@
     "@electron/fuses": "^1.8.0",
     "electron": "35.0.1"
   },
-  "keywords": [],
-  "author": {
-    "name": "Christoph Kappestein",
-    "email": "christoph.kappestein@gmail.com"
-  },
-  "license": "MIT",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
   }
