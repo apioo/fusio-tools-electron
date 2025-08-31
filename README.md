@@ -1,8 +1,9 @@
-# Fusio electron app
 
-This is a simple electron app around the Fusio backend app. You can use this
-app to connect to a Fusio system from your local computer so you don't need to
-host the javascript app.
+# Fusio Electron App
+
+This is a simple electron app around the [Fusio](https://www.fusio-project.org/)
+backend app. You can use this app to connect to a Fusio instance from your local
+computer so you don't need to host the javascript app.
 
 ## Installation
 
