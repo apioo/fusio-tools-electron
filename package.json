@@ -1,7 +1,7 @@
 {
   "name": "fusio",
   "productName": "fusio",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "Fusio backend app",
   "repository": "github:apioo/fusio-tools-electron",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "@electron-forge/plugin-fuses": "^7.6.0",
     "@electron-forge/publisher-github": "^7.6.0",
     "@electron/fuses": "^1.8.0",
-    "electron": "35.0.1"
+    "electron": "37.4.0"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
