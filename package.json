@@ -1,7 +1,7 @@
 {
   "name": "fusio",
   "productName": "fusio",
-  "version": "4.0.0",
+  "version": "7.0.0",
   "description": "Fusio backend app",
   "repository": "github:apioo/fusio-tools-electron",
   "license": "MIT",
@@ -19,16 +19,16 @@
     "lint": "echo \"No linting configured\""
   },
   "devDependencies": {
-    "@electron-forge/cli": "^7.6.0",
-    "@electron-forge/maker-deb": "^7.6.0",
-    "@electron-forge/maker-rpm": "^7.6.0",
-    "@electron-forge/maker-squirrel": "^7.6.0",
-    "@electron-forge/maker-zip": "^7.6.0",
-    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
-    "@electron-forge/plugin-fuses": "^7.6.0",
-    "@electron-forge/publisher-github": "^7.6.0",
-    "@electron/fuses": "^1.8.0",
-    "electron": "37.4.0"
+    "@electron-forge/cli": "^7.11.0",
+    "@electron-forge/maker-deb": "^7.11.0",
+    "@electron-forge/maker-rpm": "^7.11.0",
+    "@electron-forge/maker-squirrel": "^7.11.0",
+    "@electron-forge/maker-zip": "^7.11.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.11.0",
+    "@electron-forge/plugin-fuses": "^7.11.0",
+    "@electron-forge/publisher-github": "^7.11.0",
+    "@electron/fuses": "^1.0.0",
+    "electron": "41.2.1"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1"
